@@ -1,0 +1,407 @@
+*{
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 70px;
+}
+
+.logoImage{
+    width: 80%;
+    height: 100px;  
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin-right:-100px;
+   
+}
+.navElements{
+    margin: 0px 20px;
+    color: black;
+}
+
+.navLinks{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    transition: 0.2s;
+}
+
+.navLinks:hover{
+    background: linear-gradient(to right, #fc136d, #f9471a,#ec9326, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.navIcons{
+    margin: 0px 20px;
+    
+}
+.icons{
+    margin-right: 30px;
+    color: black;
+    transition: 0.2s;
+    font-size: 20px;
+}
+.icons:hover{
+    background: linear-gradient(to right, #fb0a0a, #f91a1a,#ec9326, #eedd44);
+    color: azure;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: 0.2s;
+    font-size: 22px;
+}
+.searchBar{
+    align-items: center;
+    margin-top: -10px;
+    margin-right: 30px;
+    border-radius: 10px;
+    height: 25px;
+    font-weight: 600;
+    color: #f91a1a;
+    border: 2px solid  red;
+}
+.searchBar::placeholder{
+    color: #fb0a0a;
+}
+
+#home{
+    margin: 8% 8% 0px 8%;
+    
+}
+.homeContent{
+    width: 27%;
+    height: 600px;
+    /* background-color: rgba(255, 0, 0, 0.9);  */
+    /* border-radius: 10px; */
+}
+.homeHead{
+    font-size: 65px;
+    background: linear-gradient(to right, #fb0a0a, #f91a1a,#e34208, #dd6e2e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: 0.2s;
+}
+.animate__animated.animate__fadeIn{
+    --animate-duration: 2.5s;
+}
+
+.homePara{
+    font-weight: 600;
+}
+.homePara1{
+    font-weight: 600;
+}
+.button{
+    text-decoration: none;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.button:hover{
+    background: linear-gradient(to right, #fb0a0a, #f91a1a,#e34208, #dd6e2e);
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+.homeImage{
+    position: absolute;
+    width: 55%;
+    height: 80%;
+    right: 50px;
+    bottom: 0px;
+   
+}
+.airJordan{
+    position: absolute;
+    height: 90%;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s,left 2s;  
+}
+.homeImage:hover #shape{
+    bottom: 70px;
+}
+.homeImage:hover #shoe{
+    left: 40%;
+}
+/* gallery */
+#section{
+    margin-top: 300px;
+    margin-right: 120px;
+
+}
+.headingGallery{
+    text-align: center;
+    margin-left: 150px;
+    font-size: 45px;
+    background: linear-gradient(to right, #fd0101,red,red, #dd6e2e,yellow,yellow,yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: 0.2s;
+}
+.shoeGallery{
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jordanimage{
+    height: 400px;
+    width: 400px;  
+}
+
+.img1{
+    height: 600px;
+    width: 550px;
+    border-radius: 20px;
+    transition: 0.6s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8); 
+}
+.img1:hover{
+    height: 630px;
+    width: 580px;
+    transition: 0.6s;
+}
+/* Mens */
+#menSection{
+    margin-top: 18%;
+}
+.headingMen{
+    /* text-align: center; */
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 30px;
+    background: linear-gradient(to right, #fd0101,red,red, #dd6e2e,yellow,yellow,yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.men{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1px;
+    margin: 35px 0px 0px 100px;
+}
+.menCards{
+    background-color: rgba(255, 254, 254, 1.7);
+    height: 590px;
+    width: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.menShoe{
+    height: 490px;
+    width: 500px;
+    border-radius: 10px;
+}
+.details{
+    display: grid;
+    grid-template-rows: repeat(4,2fr);
+}
+.shoeStatus{
+    text-decoration: none;
+    color: #0fc03b;
+    font-weight: 600;
+}
+.shoeType{
+    color: #00000088;
+}
+#gridGallery{
+    margin: 10%;
+}
+.bigScreen{
+    width: 100%;
+    height: 600px;
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+.splitScreen{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 118px;
+    margin-right: 60px;
+}
+.bigScreen {
+    position: relative;
+    display: inline-block;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-button {
+    position: absolute;
+    top: 90%;  /* Adjust this value to move the button vertically */
+    left: 85%;  /* Adjust this value to move the button horizontally */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 10;  /* Ensure the button appears above the image */
+    transition: background-color 0.3s ease;
+}
+
+.overlay-button:hover {
+    background-color: rgba(255, 85, 6, 0.975);
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+.headbigScreen{
+    position: absolute;
+    top: 96%;  /* Adjust this value to move the button vertically */
+    left: 84%;  /* Adjust this value to move the button horizontally */
+    padding: 10px 20px;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 800;
+    z-index: 10;  /* Ensure the button appears above the image */
+    transition: background-color 0.3s ease;
+}
+
+.split1{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+.women{
+    display: grid;
+    grid-template-columns: repeat(5,18%);
+    margin-top: 50px;
+
+}
+.womenCards{
+    background-color: rgba(255, 254, 254, 1.7);
+    height: 399px;
+    width: 300px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-left: 130px;
+}
+.womenShoe{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+#footer{
+    margin-top: 300px;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to bottom right,rgb(0, 0, 0),rgb(0, 0, 0),rgb(60, 59, 58),rgb(176, 176, 174));
+    display: grid;
+    grid-template-columns: repeat(5,15%);
+    align-items: center;
+}
+.footerSplit{
+   margin-left: 200px;
+   width: 100%;
+}
+.footerLogo{
+    width: 30%;
+    margin-top: -100px;
+}
+.content1{
+    color: white;
+    margin-top: 80px;
+}
+.content2{
+color: white;
+} 
+.content3{
+    color: white;
+    margin-top: -50px;
+}
+.list1{
+    list-style: none;
+    color: white;
+    display: inline;
+}
+.listItems{
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.listItems:hover{
+    font-size: 16px;
+    transition: 0.3s;
+}
+.brands{
+    color: white;
+    margin-left: 20px;
+}
+.content4{
+    color: white;
+    margin-top: 40px;
+}
+.ico{
+    display: flex;
+    margin-top: -100px;
+}
+.icons{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: 0.4s;
+}
+.brands{
+    color: rgb(255, 255, 255);
+   
+}
+.icons:hover{
+    
+     background-image: linear-gradient(to bottom right,red,tomato,orange,yellow);
+     font-size: 27px;
+     transition: 0.4s;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Scroll Bar */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(252, 245, 237);
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgba(235, 99, 41, 0.794);
+    border-radius: 15px;
+}
